@@ -1,0 +1,556 @@
+* {
+    -moz-box-sizing: border-box;
+    /* Firexfox */
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome/iOS/Android */
+    box-sizing: border-box;
+    /* IE */
+    /* background-color: lightblue; */
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Clear fix hack */
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+#sidebarList {
+    display: none;
+}
+
+#sidebarList li:hover {
+    color: green;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+.sidebarList li:hover {
+    color: green;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+}
+
+a:active {
+    color: white;
+}
+
+.logo {}
+
+body {
+    background-image: url("../images/3-background--Discover-Georgia-Birding-Website-2018.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.topContainer {
+    display: flex;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+header nav {
+    float: right;
+    margin-top: 0px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 0 0 40px;
+    font-size: 14px;
+}
+
+header nav ul li a {
+    color: black;
+}
+
+/* Style your flex layout containers */
+
+.mainWrapper {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+
+/* animate social icons with zoom */
+
+.zoom:hover {
+    transform: scale(1.5);
+}
+
+.zoomsmall:hover {
+    transform: scale(1.2);
+}
+
+#hamburger {
+    display: none;
+}
+
+h1 {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 20px;
+    justify-content: center;
+    display: none;
+}
+
+.sidebar {
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    margin-right: 0;
+}
+
+.sidebarList {
+    list-style: none;
+}
+
+.sidebarList:hover {
+    list-style-image: url('images/dove.png');
+}
+
+.intro {
+    width: 70%;
+    font-weight: 300;
+    color: black;
+    font-size: 22px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 260px;
+    text-align: center;
+    /* text-shadow: 2px 2px rgb(0, 0, 0);
+    -webkit-text-stroke: .5px green; */
+    /* -webkit-text-stroke: .5px black; */
+    /* background: rgba(14, 250, 5, 0.283); */
+}
+
+.search {
+    display: block;
+    height: 20px;
+    width: 100%;
+    background-position: 10px 12px;
+    position: relative;
+}
+
+/* Search animation and styling */
+
+input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+/* 
+.galleryname {
+    font-size: 40px;
+    padding-right: 712px;
+} */
+
+/* .gallery {
+    padding-left: 250px;
+} */
+
+.gallery div {
+    margin: 5px;
+    /* border: 1px solid #ccc; */
+    display: inline-flex;
+}
+
+/* Styles for info boxes */
+
+.info {
+    display: none;
+    width: 450px;
+    height: 150px;
+    overflow: scroll;
+    background: rgba(255, 255, 255, 0.811), /* border: 1px solid #ccc; */
+}
+
+.bird {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.name {
+    font-weight: bold;
+}
+
+.scientific {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.family {
+    font-weight: bold;
+}
+
+.description {}
+
+/* .audio {
+	display: flex;
+	flex-direction: column;
+
+} */
+
+/* button {
+  background-color: #d7d7d7;
+  margin: 5px 2px;
+  border: none;
+  padding: 3px 10px 4px 10px;
+  border-radius: 4px;
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  font-size: 100%;
+}
+
+button:hover, button.active {
+  background-color: #4228aa;
+  color: #fff;
+  cursor: pointer;
+} */
+
+.gallery img {
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+} */
+
+/* .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+} */
+
+/* #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+} */
+
+/* .modal-content,
+#caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+} */
+
+/* .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+} */
+
+/* .close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+} */
+
+/* @keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+} */
+
+footer {
+    padding: 65px 0 45px;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 26px 75px;
+}
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        width: 500px;
+    }
+    .galleryname {
+        padding-right: 832px;
+    }
+    #sidebarList {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    .container {
+        width: 400px;
+    }
+    .galleryname {
+        padding-left: 75px;
+    }
+    #sidebarList {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 400px;
+    }
+    .galleryname {
+        padding-left: 75px;
+    }
+    #sidebarList {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        width: 400px;
+    }
+    .galleryname {
+        padding-left: 75px;
+    }
+    #sidebarList {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 896px) {
+    .container {
+        width: 400px;
+    }
+    .galleryname {
+        font-size: 32px;
+        padding-left: 75px;
+    }
+    #sidebarList {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 500px;
+    }
+    #sidebarList {
+        display: none;
+    }
+    .logo img {
+        width: 300px;
+        padding-left: 50px;
+    }
+    #welcomeIntro {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-left: 50px;
+        text-align: center;
+    }
+    .intro {
+        /* display: none; */
+        font-size: 18px;
+        height: 150px;
+        margin: 0 auto;
+        padding: 0 0 0 0;
+    }
+    /* .modal-content {
+        width: 100%;
+    }*/
+    .introBreak {
+        visibility: hidden;
+    }
+    /* header nav {
+    display: none;
+} */
+    /* #welcomeIntro H2 {
+        display: none;
+    } */
+    .sidebarList {
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+    #hamburger {
+        color: green;
+        margin: 0;
+        font-size: 18px;
+        display: inline;
+        top: .6em;
+        right: .75em;
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+    #sidebarList ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .gallery img {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
+    .gallery {
+        padding-left: 18px;
+        padding-top: 0;
+    }
+    .info {
+        display: none;
+        padding-left: 5px;
+        width: 250px;
+        height: 200px;
+        overflow: scroll;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .container {
+        width: 200px;
+    }
+    .logo img {
+        width: 300px;
+        padding-left: 50px;
+    }
+    #welcomeIntro {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        padding-left: 50px;
+        text-align: center;
+    }
+    /* .modal-content {
+        width: 100%;
+    }
+} */
+    .intro {
+        /* display: none; */
+        font-size: 18px;
+        height: 150px;
+        margin: 0 auto;
+        padding: 0 0 0 0;
+    }
+    .introBreak {
+        visibility: hidden;
+    }
+    header nav {}
+    #welcomeIntro H2 {
+        display: none;
+    }
+    .sidebarList {
+        display: none;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 0;
+    }
+    #hamburger {
+        color: black;
+        margin: 0;
+        font-size: 18px;
+        display: inline;
+        border-bottom: 1px solid #ccc;
+        float: right;
+        text-shadow: 20px white;
+    }
+    #sidebarList {
+        align-items: center;
+        display: block;
+        position: absolute;
+        top: 150px;
+        left: 0px;
+        background: rgb(150, 108, 18);
+        border-radius: 5px;
+        padding-left: 0px;
+        height: 220px;
+    }
+    #sidebarList li {
+        padding-top: 2px;
+    }
+    .gallery img {
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+    }
+    .gallery {
+        padding-left: 18px;
+        padding-top: 0;
+    }
+    .info {
+        display: none;
+        padding-left: 5px;
+        width: 250px;
+        height: 200px;
+        overflow: scroll;
+    }
+    /* .topContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } */
+}
